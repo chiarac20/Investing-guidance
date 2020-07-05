@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investing guidance</title>
+    <script src="investingGuidance.js" async defer></script>
+</head>
+
+<body>
+    <div>
+        <form id="form">
+            <div>Investment term (years)</div>
+            <div>
+                <input type="range" id="investment-term" min="0" max="30" value="0" step="1" required>
+                <span id="investment-term-label"></span>
+            </div>
+            <br>
+            <div> Initial Funds
+            </div>
+            <div>
+                <input type="number" id="initial-fund" min="0" placeholder="How much can you invest now*" required>
+            </div>
+            <br>
+            <div> Monthly Savings
+            </div>
+            <div>
+                <input type="number" id="monthly-saving" min="0" placeholder="How much will you invest each month"
+                    required>
+            </div>
+            <br>
+            <div> Return on Investment
+            </div>
+            <div>
+                <input type="range" id="return-on-investment" min="0" max="30" step="5" value="0" required> 
+                <span id="return-on-investment-text"></span>
+            </div>
+            <button type="submit" id="submitButton">Submit</button>
+            <br>
+            <div>
+                Invested Capital
+                <span id="invested-capital-output"></span>
+                <br>
+                Profit
+                <span id="profit"></span>
+                <br>
+                Final Capital
+                <span id="finalCapital"></span></span>
+            </div>
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>
